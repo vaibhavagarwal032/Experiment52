@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Fast Food Order App"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_marginLeft="65dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="108dp"
+        android:text="Burger-Rs.50"
+        android:layout_alignParentLeft="true"
+        android:onClick="burger"
+        android:layout_marginLeft="11dp" />
+
+    <CheckBox
+        android:id="@+id/chowmine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/burger"
+        android:layout_marginTop="158dp"
+        android:text="Chowmin-Rs.50"
+        android:onClick="chowmin"
+        android:layout_alignLeft="@+id/burger" />
+
+    <CheckBox
+        android:id="@+id/Pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/burger"
+        android:layout_marginTop="202dp"
+        android:text="Pizza-Rs.99"
+        android:onClick="pizza"
+        android:layout_alignLeft="@+id/burger" />
+
+    <CheckBox
+        android:id="@+id/hotdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/burger"
+        android:layout_centerVertical="true"
+        android:text="HotDog-Rs.70"
+        android:onClick="hotdog"
+        android:layout_alignLeft="@+id/burger" />
+
+    <CheckBox
+        android:id="@+id/manchurian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/burger"
+        android:layout_marginEnd="48dp"
+        android:text="Manchurian-Rs.80"
+        android:layout_alignParentRight="true"
+        android:onClick="man"
+        android:layout_marginRight="48dp" />
+
+    <CheckBox
+        android:id="@+id/pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manchurian"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_alignTop="@+id/chowmine"
+        android:onClick="pasta"
+        android:text="Pastta-Rs.60" />
+
+    <CheckBox
+        android:id="@+id/sandwich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manchurian"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_alignTop="@+id/Pizza"
+        android:onClick="sand"
+        android:text="Sandwich-Rs.60" />
+
+    <CheckBox
+        android:id="@+id/fries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/manchurian"
+        android:layout_alignStart="@+id/manchurian"
+        android:layout_alignTop="@+id/hotdog"
+        android:onClick="fries"
+        android:text="French fries-Rs.50" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="158dp"
+        android:layout_marginStart="128dp"
+        android:text="Order Placed"
+        android:onClick="order"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp" />
+
+
+</RelativeLayout>
